@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 3: Galería de Imágenes</title>
+    <link rel="stylesheet" href="pag3_style.css"> <!-- Enlace al CSS de la página 3 -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina2.html">Pagina 1</a></li>
+                <li><a href="pagina3.html">Pagina 2</a></li>
+                <li><a href="pagina4.html">Pagina 3</a></li>
+                <li><a href="pagina5.html">Pagina 4</a></li>
+                <li><a href="pagina6.html">Pagina 5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="portfolio">
+        <h1>Galería de Imágenes de Lionel Messi</h1>
+        <div class="gallery">
+            <!-- Image 1 -->
+            <div class="image-container">
+                <img src="img/img1.png" alt="Imagen 1" class="img-rotate">
+                <div class="overlay">
+                    <h3>Entrenamiento</h3>
+                    <p>Lionel Messi en una intensa sesión de entrenamiento.</p>
+                </div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="image-container">
+                <img src="img/img2.png" alt="Imagen 2" class="img-scale">
+                <div class="overlay">
+                    <h3>Celebración</h3>
+                    <p>Celebración tras ganar el campeonato.</p>
+                </div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="image-container">
+                <img src="img/img3.png" alt="Imagen 3" class="img-fade">
+                <div class="overlay">
+                    <h3>Messi con la Copa</h3>
+                    <p>Messi observando la Copa</code>.</p>
+                </div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="image-container">
+                <img src="img/img4.png" alt="Imagen 4" class="img-slide">
+                <div class="overlay">
+                    <h3>Concentración</h3>
+                    <p>Momento de concentración durante el partido.</p>
+                </div>
+            </div>
+
+            <!-- Image 5 -->
+            <div class="image-container">
+                <img src="img/img5.png" alt="Imagen 5" class="img-zoom">
+                <div class="overlay">
+                    <h3>Parando enfrente de el Arco</h3>
+                    <p>Esperando a que empieze la ronda .</p>
+                </div>
+            </div>
+
+            <!-- Image 6 -->
+            <div class="image-container">
+                <img src="img/img6.png" alt="Imagen 6" class="img-shake">
+                <div class="overlay">
+                    <h3>Esperando</h3>
+                    <p>Messi esperando </p>
+                </div>
+            </div>
+
+            <!-- Image 7 -->
+            <div class="image-container">
+                <img src="img/img7.png" alt="Imagen 7" class="img-bounce">
+                <div class="overlay">
+                    <h3>Cantando el Himno Nacional de Argentina</h3>
+                    <p>Messi cantando el himno nacional.</p>
+                </div>
+            </div>
+
+            <!-- Image 8 -->
+            <div class="image-container">
+                <img src="img/img8.png" alt="Imagen 8" class="img-tilt">
+                <div class="overlay">
+                    <h3>Messi con la Copa</h3>
+                    <p>Messi besando la Copa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+ 
+        <section class="buttons-section">
+            <div class="buttons">
+                <a href="pagina2.html"><button class="btn animado1">Ir a Página 1</button></a>
+                <a href="pagina3.html"><button class="btn animado2">Ir a Página 2</button></a>
+                <a href="pagina4.html"><button class="btn animado3">Ir a Página 3</button></a>
+                <a href="pagina5.html"><button class="btn animado4">Ir a Página 4</button></a>
+                <a href="pagina6.html"><button class="btn animado5">Ir a Página 5</button></a>
+            </div>
+        </section>
+    </section>
+
+
+
+    <footer>
+        <p>Autor: Nombre del Estudiante - Fecha: <span id="date"></span></p>
+    </footer>
+
+    <script>
+        // Mostrar la fecha actualizada automáticamente
+        document.getElementById("date").innerHTML = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

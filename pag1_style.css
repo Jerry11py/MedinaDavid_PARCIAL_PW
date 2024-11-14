@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff6347;
+}
+
+.content {
+    text-align: center;
+    margin: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button Animations */
+.animado1 {
+    background-color: #4CAF50;
+}
+
+.animado1:hover {
+    transform: scale(1.1);
+    background-color: #45a049;
+}
+
+.animado2 {
+    background-color: #2196F3;
+}
+
+.animado2:hover {
+    transform: rotate(10deg);
+    background-color: #0b7dda;
+}
+
+.animado3 {
+    background-color: #ff9800;
+}
+
+.animado3:hover {
+    background-color: #e68900;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: rotate(20deg);
+}
+
+.animado4 {
+    background-color: #f44336;
+}
+
+.animado4:hover {
+    transform: translateY(-5px);
+    background-color: #d32f2f;
+}
+
+.animado5 {
+    background-color: #9C27B0;
+}
+
+.animado5:hover {
+    background-color: #7b1fa2;
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Interactive Elements Styling */
+
+/* Toggle Button with Color and Size Change on Click */
+#toggle-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #666;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#toggle-button.clicked {
+    background-color: #ff6347;
+    transform: scale(1.2);
+}
+
+/* Color Cycling Box */
+.color-cycle-box {
+    margin-top: 20px;
+    padding: 20px;
+    width: 200px;
+    background-color: #333;
+    color: white;
+    animation: colorCycle 4s infinite;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+@keyframes colorCycle {
+    0% { background-color: #333; }
+    33% { background-color: #ff6347; }
+    66% { background-color: #4CAF50; }
+    100% { background-color: #2196F3; }
+}
+
+/* Rotating Text */
+.rotating-text {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+    animation: rotateText 3s linear infinite;
+}
+
+@keyframes rotateText {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Hover-Resize Box */
+.hover-resize-box {
+    margin-top: 20px;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: #4CAF50;
+    color: white;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hover-resize-box:hover {
+    transform: scale(1.3);
+}
+
+/* Variable Speed Animated Text */
+.variable-speed-text {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+    animation: variableSpeed 5s ease-in-out infinite;
+}
+
+@keyframes variableSpeed {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(50px); }
+    100% { transform: translateX(0); }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

@@ -1,0 +1,167 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ffdd57;
+}
+
+/* Blog Section */
+.blog {
+    padding: 2rem;
+    text-align: center;
+}
+
+.blog h1 {
+    margin-bottom: 2rem;
+}
+
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    width: 150px;
+    height: auto;
+}
+
+.blog-post h2 {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.blog-post p {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.read-more {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #45a049;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Animaciones para los botones */
+.animado1 {
+    background-color: #4CAF50;
+}
+
+.animado1:hover {
+    transform: scale(1.1);
+    background-color: #45a049;
+}
+
+.animado2 {
+    background-color: #2196F3;
+    
+}
+
+.animado2:hover {
+    transform: rotate(10deg);
+    background-color: #0b7dda;
+}
+
+.animado3 {
+    background-color: #ff9800;
+    
+}
+
+.animado3:hover {
+    background-color: #e68900;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: rotate(20deg);
+}
+
+.animado4 {
+    background-color: #f44336;
+}
+
+.animado4:hover {
+    transform: translateY(-5px);
+    background-color: #d32f2f;
+}
+
+.animado5 {
+    background-color: #9C27B0;
+}
+
+.animado5:hover {
+    background-color: #7b1fa2;
+    transform: scale(1.1) rotate(5deg);
+}

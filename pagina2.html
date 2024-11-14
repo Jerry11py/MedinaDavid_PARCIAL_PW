@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2: Perfil del Deportista</title>
+    <link rel="stylesheet" href="pag2_style.css"> <!-- Enlace al CSS de la página 2 -->
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina2.html">Pagina 1</a></li>
+                <li><a href="pagina3.html">Pagina 2</a></li>
+                <li><a href="pagina4.html">Pagina 3</a></li>
+                <li><a href="pagina5.html">Pagina 4</a></li>
+                <li><a href="pagina6.html">Pagina 5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Biography Section -->
+    <section class="biography">
+        <h1>Biografía de Lionel Messi</h1>
+        <p> Lionel Andrés Messi, nacido el 24 de junio de 1987 en Rosario, Argentina, es considerado uno de los mejores futbolistas de todos los tiempos. A lo largo de su carrera, ha roto innumerables récords y ha ganado múltiples títulos, destacando principalmente en el FC Barcelona y, más recientemente, en la Selección Argentina con la que ganó la Copa del Mundo en 2022. Messi es conocido por su increíble habilidad, precisión en el manejo del balón y su capacidad de liderazgo en el campo de juego.</p>
+    </section>
+
+    <!-- Career Table Section -->
+    <section class="career">
+        <h2>Trayectoria</h2>
+        <table>
+            <tr>
+                <th>Año</th>
+                <th>Equipo</th>
+                <th>Logros</th>
+            </tr>
+            <tr>
+                <td>2004 - 2021</td>
+                <td>FC Barcelona</td>
+                <td>10 Ligas, 4 Champions League, 7 Copas del Rey</td>
+            </tr>
+            <tr>
+                <td>2021 - 2023</td>
+                <td>Paris Saint-Germain</td>
+                <td>2 Ligue 1</td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>Selección Argentina</td>
+                <td>Campeón de la Copa del Mundo</td>
+            </tr>
+            <tr>
+                <td>2019</td>
+                <td>Selección Argentina</td>
+                <td>Campeón de la Copa América</td>
+            </tr>
+            <tr>
+                <td>2023 - Presente</td>
+                <td>Inter Miami CF</td>
+                <td>Leagues Cup</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contacto</h2>
+        <p>Sígueme en mis redes sociales:</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/leomessi" class="icon instagram" target="_blank">Instagram</a>
+            <a href="https://twitter.com/TeamMessi" class="icon twitter" target="_blank">Twitter</a>
+            <a href="https://www.facebook.com/leomessi" class="icon facebook" target="_blank">Facebook</a>
+        </div>
+
+        <h3>Currículo</h3>
+        <a href="CV_Lionel_Messi.pdf" class="resume-link" target="_blank">Ver el Currículo en formato PDF</a>
+    </section>
+
+
+    <section class="content">
+    
+        <section class="buttons-section">
+            <div class="buttons">
+                <a href="pagina2.html"><button class="btn animado1">Ir a Página 1</button></a>
+                <a href="pagina3.html"><button class="btn animado2">Ir a Página 2</button></a>
+                <a href="pagina4.html"><button class="btn animado3">Ir a Página 3</button></a>
+                <a href="pagina5.html"><button class="btn animado4">Ir a Página 4</button></a>
+                <a href="pagina6.html"><button class="btn animado5">Ir a Página 5</button></a>
+            </div>
+        </section>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>Autor: Nombre del Estudiante - Fecha: <span id="date"></span></p>
+    </footer>
+
+    <script>
+        // Mostrar la fecha actualizada automáticamente
+        document.getElementById("date").innerHTML = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

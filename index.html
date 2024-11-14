@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="pag1_style.css"> <!-- Enlace a la hoja de estilos específica -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina2.html">Página 1</a></li>
+                <li><a href="pagina3.html">Página 2</a></li>
+                <li><a href="pagina4.html">Página 3</a></li>
+                <li><a href="pagina5.html">Página 4</a></li>
+                <li><a href="pagina6.html">Página 5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h1>Bienvenidos a mi Página Principal</h1>
+        <p>En esta página encontrarás enlaces a otras páginas con diferentes contenidos:</p>
+        <ul>
+            <li><strong>Página 1:</strong> Perfil Profesional.</li>
+            <li><strong>Página 2:</strong> Galeria de Imágenes</li>
+            <li><strong>Página 3:</strong> Blog Profesional</li>
+            <li><strong>Página 4:</strong> Galería de imágenes.</li>
+        </ul>
+
+        <section class="buttons-section">
+            <div class="buttons">
+                <a href="pagina2.html"><button class="btn animado1">Ir a Página 1</button></a>
+                <a href="pagina3.html"><button class="btn animado2">Ir a Página 2</button></a>
+                <a href="pagina4.html"><button class="btn animado3">Ir a Página 3</button></a>
+                <a href="pagina5.html"><button class="btn animado4">Ir a Página 4</button></a>
+                <a href="pagina6.html"><button class="btn animado5">Ir a Página 5</button></a>
+            </div>
+        </section>
+
+        <!-- New Interactive Elements -->
+        <div class="interactive-elements">
+            <button id="toggle-button">Botón Cambiante</button>
+            
+            <div class="color-cycle-box">Caja con Ciclo de Colores</div>
+            
+            <div class="rotating-text">Texto Rotativo</div>
+            
+            <div class="hover-resize-box">Pasa el cursor aquí</div>
+            
+            <div class="variable-speed-text">Texto con Velocidad Variable</div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>Mi nombre - Fecha: <span id="date"></span></p>
+    </footer>
+
+    <script>
+        // Mostrar la fecha actualizada automáticamente
+        document.getElementById("date").innerHTML = new Date().toLocaleDateString();
+
+        // Toggle button color and size on click
+        document.getElementById("toggle-button").addEventListener("click", function() {
+            this.classList.toggle("clicked");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 3: Blog Profesional</title>
+    <link rel="stylesheet" href="pag4_style.css"> <!-- Enlace al CSS de la página 4 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pagina2.html">Pagina 1</a></li>
+                <li><a href="pagina3.html">Pagina 2</a></li>
+                <li><a href="pagina4.html">Pagina 3</a></li>
+                <li><a href="pagina5.html">Pagina 4</a></li>
+                <li><a href="pagina6.html">Pagina 5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="blog">
+        <h1>Blog Profesional de Lionel Messi</h1>
+
+        <!-- Career Step 1: Barcelona -->
+        <article class="blog-post" data-aos="fade-up">
+            <img src="img/barcelona.png" alt="Barcelona">
+            <h2>FC Barcelona</h2>
+            <p>En el FC Barcelona, Lionel Messi consolidó su carrera profesional, ganando múltiples títulos y convirtiéndose en un ícono del club. Sus habilidades extraordinarias lo posicionaron como uno de los mejores futbolistas del mundo.</p>
+            <a href="https://www.fcbarcelona.com" target="_blank" class="read-more">Leer más</a>
+        </article>
+
+        <!-- Career Step 2: Paris Saint-Germain -->
+        <article class="blog-post" data-aos="fade-up">
+            <img src="img/psg.png" alt="Paris Saint-Germain">
+            <h2>Paris Saint-Germain (PSG)</h2>
+            <p>En 2021, Lionel Messi se unió al PSG, aportando su experiencia y habilidades al club francés. Su llegada generó gran expectativa, y contribuyó en el logro de nuevos títulos para el equipo.</p>
+            <a href="https://www.psg.fr" target="_blank" class="read-more">Leer más</a>
+        </article>
+
+        <!-- Career Step 3: Selección Argentina -->
+        <article class="blog-post" data-aos="fade-up">
+            <img src="img/AFA.png" alt="Selección Argentina">
+            <h2>Selección Argentina</h2>
+            <p>Con la Selección Argentina, Messi alcanzó su sueño de ganar la Copa del Mundo en 2022, consolidando su legado en el fútbol mundial. Su liderazgo y pasión inspiraron a una generación de aficionados.</p>
+            <a href="https://www.afa.com.ar" target="_blank" class="read-more">Leer más</a>
+        </article>
+    </section>
+
+    <section class="content">
+    
+        <section class="buttons-section">
+            <div class="buttons">
+                <a href="pagina2.html"><button class="btn animado1">Ir a Página 1</button></a>
+                <a href="pagina3.html"><button class="btn animado2">Ir a Página 2</button></a>
+                <a href="pagina4.html"><button class="btn animado3">Ir a Página 3</button></a>
+                <a href="pagina5.html"><button class="btn animado4">Ir a Página 4</button></a>
+                <a href="pagina6.html"><button class="btn animado5">Ir a Página 5</button></a>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <p>Autor: Nombre del Estudiante - Fecha: <span id="date"></span></p>
+    </footer>
+
+
+
+
+
+    <script>
+        // Initialize AOS library for animations
+        AOS.init({
+            duration: 1200, // Duration of the animation
+        });
+
+        // Display the current date
+        document.getElementById("date").innerHTML = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
